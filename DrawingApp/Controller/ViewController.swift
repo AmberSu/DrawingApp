@@ -8,16 +8,17 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
-    
-    @IBOutlet weak var readMoreButton: UIButton!
-    
-    @IBOutlet weak var reserveButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        createRoundedPhoto()
+    }
+    
+    func createRoundedPhoto() {
         image.layer.masksToBounds = false
         image.layer.cornerRadius = image.frame.height/2
         image.clipsToBounds = true

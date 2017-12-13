@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class RoundedView: UITextView {
+class RoundedView: UIButton {
     override func draw(_ rect: CGRect) {
         let circlePath = UIBezierPath(ovalIn: rect)
         UIColor.black.setStroke()
