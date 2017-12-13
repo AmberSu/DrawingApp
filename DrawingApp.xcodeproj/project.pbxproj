@@ -12,6 +12,10 @@
 		224944DF1FDE9D1D001CEE38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224944DD1FDE9D1D001CEE38 /* Main.storyboard */; };
 		224944E11FDE9D1D001CEE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224944E01FDE9D1D001CEE38 /* Assets.xcassets */; };
 		224944E41FDE9D1D001CEE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224944E21FDE9D1D001CEE38 /* LaunchScreen.storyboard */; };
+		226A99CF1FDEB41000E143F2 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A99CE1FDEB41000E143F2 /* RectangleView.swift */; };
+		226A99D11FDEB78E00E143F2 /* RhombusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A99D01FDEB78E00E143F2 /* RhombusView.swift */; };
+		226A99D51FDECEDE00E143F2 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A99D41FDECEDE00E143F2 /* RoundedView.swift */; };
+		226A99D71FDED6B400E143F2 /* ExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A99D61FDED6B400E143F2 /* ExtraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		224944E01FDE9D1D001CEE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224944E31FDE9D1D001CEE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224944E51FDE9D1D001CEE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226A99CE1FDEB41000E143F2 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		226A99D01FDEB78E00E143F2 /* RhombusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhombusView.swift; sourceTree = "<group>"; };
+		226A99D41FDECEDE00E143F2 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		226A99D61FDED6B400E143F2 /* ExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,33 @@
 			isa = PBXGroup;
 			children = (
 				224944D91FDE9D1D001CEE38 /* AppDelegate.swift */,
-				224944DB1FDE9D1D001CEE38 /* ViewController.swift */,
-				224944DD1FDE9D1D001CEE38 /* Main.storyboard */,
+				226A99DA1FDEEE3F00E143F2 /* Controller */,
+				226A99D81FDEEE1C00E143F2 /* View */,
 				224944E01FDE9D1D001CEE38 /* Assets.xcassets */,
+				224944DD1FDE9D1D001CEE38 /* Main.storyboard */,
 				224944E21FDE9D1D001CEE38 /* LaunchScreen.storyboard */,
 				224944E51FDE9D1D001CEE38 /* Info.plist */,
 			);
 			path = DrawingApp;
+			sourceTree = "<group>";
+		};
+		226A99D81FDEEE1C00E143F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				226A99D41FDECEDE00E143F2 /* RoundedView.swift */,
+				226A99D61FDED6B400E143F2 /* ExtraView.swift */,
+				226A99D01FDEB78E00E143F2 /* RhombusView.swift */,
+				226A99CE1FDEB41000E143F2 /* RectangleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		226A99DA1FDEEE3F00E143F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				224944DB1FDE9D1D001CEE38 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				224944DC1FDE9D1D001CEE38 /* ViewController.swift in Sources */,
+				226A99D71FDED6B400E143F2 /* ExtraView.swift in Sources */,
+				226A99D51FDECEDE00E143F2 /* RoundedView.swift in Sources */,
 				224944DA1FDE9D1D001CEE38 /* AppDelegate.swift in Sources */,
+				226A99CF1FDEB41000E143F2 /* RectangleView.swift in Sources */,
+				226A99D11FDEB78E00E143F2 /* RhombusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +307,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7DNMV5USSV;
+				DEVELOPMENT_TEAM = P3Y6KB76J9;
 				INFOPLIST_FILE = DrawingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amberApps.DrawingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gintareApps.DrawingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,10 +323,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7DNMV5USSV;
+				DEVELOPMENT_TEAM = P3Y6KB76J9;
 				INFOPLIST_FILE = DrawingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amberApps.DrawingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gintareApps.DrawingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
